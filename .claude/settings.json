@@ -1,0 +1,7 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://localhost:20128/v1",
+    "ANTHROPIC_AUTH_TOKEN": "sk-7980adc3b854f473-057618-9c030bff",
+    "ANTHROPIC_MODEL": "Ultron"
+  }
+}

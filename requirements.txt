@@ -1,0 +1,31 @@
+# Core dependencies
+typer==0.12.5
+pydantic==2.8.2
+pydantic-settings==2.4.0
+pyyaml==6.0.1
+python-dotenv==1.0.1
+
+# Video processing
+yt-dlp==2024.8.6
+faster-whisper==1.0.3
+opencv-python==4.10.0.84
+scenedetect==0.6.1
+librosa==0.10.2
+pydub==0.25.1
+
+# AI/ML
+anthropic==0.39.0
+google-api-python-client==2.145.0
+google-auth-oauthlib==1.2.1
+
+# UI
+streamlit==1.38.0
+
+# Testing
+pytest==8.3.2
+pytest-mock==3.14.0
+
+# Utilities
+requests==2.32.3
+mediapipe==0.10.14
+edge-tts==6.1.10

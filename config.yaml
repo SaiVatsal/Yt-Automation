@@ -1,0 +1,69 @@
+# ShortsForge Configuration
+# All settings can be overridden via environment variables
+
+# Clip duration constraints (seconds)
+clip_min_len: 9
+clip_max_len: 60
+top_n: 5
+
+# Transcription settings
+whisper_model: "small"  # tiny, base, small, medium, large-v3
+frame_fps: 1
+speech_density_threshold: 0.35
+
+# Default privacy for YouTube uploads
+privacy_default: "private"
+
+# LLM model for clip analysis and narration
+llm_model: "claude-sonnet-5-5"
+
+# Channel allowlist for compliance (add your own channels)
+allowlist_channels:
+  - "MyOwnChannel"
+  - "ApprovedPartnerChannel"
+
+# TTS provider configuration
+tts:
+  provider: "voicebox"  # voicebox or edge_tts
+  voicebox:
+    base_url: "http://127.0.0.1:17493"
+    profile_id: "default_profile"
+    language: "en"
+  edge_tts:
+    voice: "en-US-JennyNeural"
+
+# Narration settings
+narration_enabled: true
+narration_style: "friendly, energetic explainer"
+
+# Caption styling (ASS format)
+caption_style:
+  font_name: "Arial-Bold"
+  font_size: 28
+  primary_color: "&H00FFFFFF"   # White for inactive words
+  highlight_color: "&H0000FFFF" # Yellow for active word
+  outline_color: "&H00000000"   # Black outline
+  outline_width: 3
+  margin_v: 180                 # Vertical margin from bottom
+
+# Video output format
+video_format:
+  width: 1080
+  height: 1920
+  crop_mode: "blur_split"       # 'blur_split' or 'face_track'
+  ducking_factor: 0.25          # Original audio volume during voiceover (25%)
+  mute_bg_music: false
+
+# Database
+database:
+  path: "data/shortsforge.db"
+
+# Working directories
+paths:
+  work_dir: "work"
+  output_dir: "output"
+
+# YouTube API
+youtube:
+  quota_daily_limit: 10000
+  quota_per_upload: 1600
